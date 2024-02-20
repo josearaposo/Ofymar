@@ -1,0 +1,71 @@
+aside {
+    background-color: #76052A;
+    width: 39.5%;
+    margin-right: 0.5%;
+    border-radius: 0 0 20px 20px;
+    float: left;
+    display: grid;
+    grid-template-rows: 60% 15% 20%;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 5px;
+    height:80vh;
+}
+/* imagen izquierda de todas las páginas */
+.izquierda {
+    max-width: 90%;
+    max-height: 90%;
+    height: auto;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+}
+
+.izquierda:hover{
+    -webkit-transform: rotate(360deg);
+    transform: rotateX(360deg);
+}
+
+/* Botones del aside */
+.boton {
+    max-width: 40%;
+    height: auto;
+    border-radius: 50%;
+    background: #005478;
+    width: 150px;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;   
+
+}
+
+.boton:hover {
+    background: #76052A;
+    -webkit-transform: scale(.5);
+    transform: scale(.5);
+}
+
+
+/* Estilos del cuerpo principal main de todas las web */
+main {
+    background-color: #E73C50;
+    width: 60%;
+    border-radius: 0 0 20px 20px;
+    float: right;
+    text-align: center;
+    color: white;
+    margin-bottom: 5px;
+
+}
+
+.logoenmain {
+    max-width: 50%;
+    height: auto;
+}
+
+.contenedor-principal {
+    display: inline-flex;
+    flex: 1;
+}
+
+.titulo {
+    color: white;
+}

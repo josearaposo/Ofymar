@@ -1,0 +1,63 @@
+/* Posicionamiento de la cabecera */
+header {
+    position: relative;
+
+}
+
+/* Parte de la cabecera con el logo */
+.logo {
+    background-color: #76052A;
+    width: 39.5%;
+    height: 100px;
+    border-radius: 20px 20px 0 0;
+    float: left;
+    margin-right: 0.5%;
+    padding-top: 30px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+/* Tamaño de imagenes en general */
+img {
+    height: 50px;
+
+}
+
+/* Parte de la cabecera con el menu */
+.menu {
+
+    background-color: #E73C50;
+    width: 60%;
+    height: 100px;
+    border-radius: 20px 20px 0 0;
+    float: left;
+    padding-top: 30px;
+
+
+}
+
+/* Menu de navegacion, eliminamos las listas de estylos y toda la decoracion */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+}
+
+nav li {
+    display: inline;
+    /*Horizontal*/
+    margin-right: 20px;
+}
+
+nav a {
+
+    text-decoration: none;
+    color: white;
+
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
