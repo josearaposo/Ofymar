@@ -1,0 +1,34 @@
+footer {
+    background-color: #76052A;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.contenedor-navegacion ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    padding-top: 5px;
+
+}
+
+.contenedor-navegacion li {
+    display: inline;
+    /*Horizontal*/
+    margin-right: 20px;
+}
+
+.contenedor-navegacion a {
+
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+
+}
+
+.contenedor-navegacion a:hover {
+    text-decoration: underline;
+}

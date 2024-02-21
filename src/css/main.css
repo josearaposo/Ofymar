@@ -69,3 +69,15 @@ main {
 .titulo {
     color: white;
 }
+
+.botontienda {
+    max-width: 40%;
+    height: auto;
+    border-radius: 50%;
+    background: #005478;
+    width: 160px;
+}
+
+.botontienda:hover {
+    background: #E73C50;
+}

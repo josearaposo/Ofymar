@@ -14,8 +14,8 @@ export default function Header() {
             <nav>
                 <div>
                 <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="tienda.html">Tienda</a></li>
+                    <li><a href="/">Inicio</a></li>
+                    <li><a href="tienda">Tienda</a></li>
                     <li><a href="construccion.html">Impresión</a></li>
                     <li><a href="nosotros.html">Nosotros</a></li>
                     <li><a href="blog.html">blog</a></li>
