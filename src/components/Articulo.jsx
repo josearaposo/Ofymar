@@ -1,25 +1,21 @@
 import React from 'react'
-import Articulos from '../json/articulos.json'
 import carrito from '../assets/carrito-de-compras.png'
+import '../css/articulo.css'
 
-function BuscarArticulo(props) {
+function Articulo(props) {
+    console.log(carrito)
+    console.log(props.imagen)
     return (
        <div className="articulos">
            <div className="textos">
-               <img className="img-articulo" src={Articulos[{props.id}].imagen} alt="foto de un lapiz noris HB escritura normal" />
-               <p>{props.id}</p>
-              {/*  <p>{Articulos{props.id}}</p> */}
-{/*                <p>{Articulos[props.id].descripcion}</p>
-               {<p>{Articulos[props.id].precio}</p>} */}
+               <img className="img-articulo" src={props.imagen} alt="foto de un lapiz noris HB escritura normal" /> 
+               <p>{props.nombre}</p>
+               <p>{props.descripcion}</p>
+               <p>{props.precio}</p>  
                <a href="#"><img className="img-carrito" src={carrito} alt="carrito" /></a>
            </div>
        </div>
    )
    }
 
-
-export default function Articulo() {
-    return (
-    <BuscarArticulo id="2"/>
-    );
-}
+export default Articulo;

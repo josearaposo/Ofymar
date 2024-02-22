@@ -1,0 +1,13 @@
+.articulos {
+    border-radius: 0.625rem;
+    min-height: 9.5rem;
+    min-height: 12.5rem;
+    height: 12.5rem;
+    font-weight: bold;
+    padding: 1.25rem;
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    width: 180px;
+
+}

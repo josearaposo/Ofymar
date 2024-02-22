@@ -1,0 +1,113 @@
+.contenedor-articulos {
+    display: flex;
+    flex-flow: wrap;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+    margin: auto;
+    width: 90%;
+    margin-top: 1rem;
+}
+
+.contenedor-articulos p {
+    color: #005478;
+    font-size: 0.75em;
+    margin: 0.3rem;
+    line-height: 1rem;
+
+
+}
+
+p:nth-child(2) {
+    font-size: 1.25rem;
+}
+p:nth-child(4) {
+    font-size: 1.5em;
+    margin: auto;
+    text-align: center;
+    width: 70%;
+    margin-bottom: 15px;
+}
+.contenedor-menu-articulos {
+    background-color: #76052A;
+    height: 5.6rem;
+    padding-top: 0.625rem;
+}
+
+.contenedor-navegacion ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    padding-top: 0.3rem;
+
+}
+
+.contenedor-navegacion li {
+    display: inline;
+    /*Horizontal*/
+    margin-right: 1.25rem;
+}
+
+.contenedor-navegacion a {
+
+    text-decoration: none;
+    color: white;
+    font-size: 1.25rem;
+
+}
+
+.contenedor-navegacion a:hover {
+    text-decoration: underline;
+}
+
+.buscador-articulos {
+    display: inline-flex;
+
+    gap: 0.625rem;
+}
+
+/* Paginacion  de la tienda*/
+ul.pagination {
+    display: inline-block;
+    margin: 0;
+    padding-top: 0.625rem;
+}
+
+ul.pagination li {
+    display: inline;
+}
+
+ul.pagination li a {
+    color: white;
+    float: left;
+    padding: 9px 18px;
+    text-decoration: none;
+}
+
+ul.pagination li a.active {
+    background-color: #005478;
+    color: white;
+}
+
+ul.pagination li a.active:hover {
+    background-color: #76052A;
+}
+
+ul.pagination li a:hover:not(.active) {
+    background-color:#76052A;
+}
+.botontienda {
+    max-width: 40%;
+    height: auto;
+    border-radius: 50%;
+    background: #005478;
+    width: 10rem;
+}
+
+.botontienda:hover {
+    background: #E73C50;
+}
+.img-carrito {
+    background-color: #E73C50;
+    border-radius: 50%;
+}
