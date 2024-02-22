@@ -1,0 +1,10 @@
+[
+    {
+        "id": 1,
+        "nombre":"Lapiz KF00123",
+        "descripcion":"Lapiz Steadler punta HB unidad",
+        "precio":0.45,
+        "imagen":"lapiz.jpg",
+        "categoria": "Escritura"
+    }
+]

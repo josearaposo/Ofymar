@@ -1,21 +1,14 @@
 import React from 'react'
+import Aside from './Aside.jsx'
 import '../css/global.css'
 import '../css/main.css'
 import logo from '../assets/logo.png'
-import ordenador from '../assets/ordenador.png'
 import carrito from '../assets/carrito-de-compras.png'
 
 export default function Principal() {
   return (
     <div className="contenedor-principal">
-    <aside>
-       
-        <img className="izquierda" src={ordenador} alt=""/>
-        <p>Trabajos de impesión personalizados,<br/>
-            desde 0.02€ con distintos acabados<br/>
-            ¡EMPIEZA YA!</p>
-        <img className="boton" src={carrito} alt="Boton con acceso a la página de impresion"/>
-    </aside>
+    <Aside />
     <main>
         <img src={logo} alt="" className="logoenmain"/>
         <h1 className="titulo">Suministro Intregral de Oficina y Escolar</h1>
