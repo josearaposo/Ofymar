@@ -1,7 +1,7 @@
 import React from 'react'
 import carrito from '../assets/carrito-de-compras.png'
 import ordenador from '../assets/ordenador.png'
-
+import '../css/main.css'
 
 
 export default function Aside() {

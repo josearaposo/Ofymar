@@ -1,6 +1,6 @@
 import React from 'react'
 import Aside from './Aside.jsx'
-import '../css/global.css'
+/* import '../css/global.css' */
 import '../css/main.css'
 import logo from '../assets/logo.png'
 import carrito from '../assets/carrito-de-compras.png'

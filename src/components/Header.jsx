@@ -7,7 +7,7 @@ export default function Header() {
     <div>
         <header>
         <div className="logo">
-            <a href="index.html"><img src={logo} alt="logo empresa que funciona de enlace con la pagina inicio"/></a>
+            <a href="/"><img src={logo} alt="logo empresa que funciona de enlace con la pagina inicio"/></a>
 
         </div>
         <div className="menu">
