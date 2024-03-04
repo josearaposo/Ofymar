@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
-import fotocarrito from '../assets/carrito-de-compras.png'
+import mascarrito from '../assets/anadir.png'
+import menoscarrito from '../assets/quitar-del-carrito.png'
 import '../css/articulo.css'
 import { datosContext } from '../contexts/CarritoContext';
 
@@ -54,9 +55,9 @@ function Articulo({id, nombre,descripcion,precio,imagen,categoria}) {
                <p>{descripcion}</p>
                <p>{precio}€</p>  
                <a href="#" onClick={()=> addAlCarrito()}>
-                {/* <img className="img-carrito" src={fotocarrito} alt="carrito" /> */}+</a>
+                <img className="img-carrito" src={mascarrito} alt="carrito" /></a>
                 <a href="#" onClick={()=> borrarArticulo(id)}>
-                <img className="img-carrito" src={fotocarrito} alt="borrar" /></a>
+                <img className="img-carrito" src={menoscarrito} alt="borrar" /></a>
            </div>
        </div>
    )

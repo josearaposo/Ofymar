@@ -15,13 +15,10 @@ const URL = "/json/articulos.json";
 const [Datos, setDatos] = useState([]);
 
 useEffect(() => {
-    fetch(URL)
-        .then(res => res.json())
-        .then(Datos =>{
-        setDatos(Datos);
-        });
-},[]);
-/*     const fetchDatos = async () => {
+
+//Conexion fetch
+
+   const fetchDatos = async () => {
         try {
             const response = await fetch(URL);
             const Datos = await response.json();
@@ -29,7 +26,9 @@ useEffect(() => {
         } catch (error) {
             console.error('Error al obtener los datos:', error);
         }
-    }; */
+    }
+        fetchDatos();
+    },[]);
 
  const [carrito, setCarrito] = useContext(datosContext);
  const cantidad = carrito.reduce((total, valor) => {
@@ -54,10 +53,7 @@ useEffect(() => {
                     </Link>
                 </ul>
             </div>
-  
-{/*                 <label for="buscador">Buscar</label>
-                <input type="text" id="buscador"/> */}
-                
+               
      
         </div>
         <div className="contenedor">

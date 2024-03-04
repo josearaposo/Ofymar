@@ -19,6 +19,7 @@ export default function Carrito() {
     <Aside />
     <main>
         <div>
+            
         {carrito.map((articulo) => (     
             <><div className='lista-carrito'>
                 <img className="img-articulo" src={articulo.imagen} alt="foto de un lapiz noris HB escritura normal" /> 
@@ -32,7 +33,7 @@ export default function Carrito() {
         <h1>Carrito:</h1>
         <div>Cantidad: {cantidad}</div>
         <div>Total: {totalCarrito} €</div>
-        <button onClick={() => console.log(carrito)}>Checkout</button>
+        <button onClick={() => console.log(carrito)}>Comprar</button>
     </main>
 
     </div>

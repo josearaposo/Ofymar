@@ -12,7 +12,7 @@ export default function Principal() {
     <main>
         <img src={logo} alt="" className="logoenmain"/>
         <h1 className="titulo">Suministro Intregral de Oficina y Escolar</h1>
-        <a href="tienda.html">
+        <a href="/tienda">
             <img className="botontienda" 
             src={carrito}
             alt="Acceso carrito que enlaza con la tienda online"/>
