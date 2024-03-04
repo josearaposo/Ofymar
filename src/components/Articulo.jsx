@@ -54,7 +54,7 @@ function Articulo({id, nombre,descripcion,precio,imagen,categoria}) {
                <p>{descripcion}</p>
                <p>{precio}€</p>  
                <a href="#" onClick={()=> addAlCarrito()}>
-                <img className="img-carrito" src={fotocarrito} alt="carrito" /></a>
+                {/* <img className="img-carrito" src={fotocarrito} alt="carrito" /> */}+</a>
                 <a href="#" onClick={()=> borrarArticulo(id)}>
                 <img className="img-carrito" src={fotocarrito} alt="borrar" /></a>
            </div>
