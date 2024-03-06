@@ -13,6 +13,15 @@ export default function Carrito() {
     const totalCarrito = carrito.reduce((total, valor) => {
         return total + valor.cantidad * valor.precio;
     },0);
+
+    const hacerCompra = () => {
+    
+        // Después de realizar la compra, borrar el contenido del localStorage
+        localStorage.removeItem('carrito');
+    
+        // También puedes actualizar el estado del carrito en tu aplicación, si es necesario
+        setCarrito([]);
+      };
     
   return (
     <div className="contenedor-principal">
@@ -33,7 +42,7 @@ export default function Carrito() {
         <h1>Carrito:</h1>
         <div>Cantidad: {cantidad}</div>
         <div>Total: {totalCarrito} €</div>
-        <button onClick={() => console.log(carrito)}>Comprar</button>
+       <button onClick={hacerCompra}>Comprar</button>
     </main>
 
     </div>
