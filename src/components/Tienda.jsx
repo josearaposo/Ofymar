@@ -64,13 +64,6 @@ useEffect(() => {
             })}
             
             </div>
-{/*             <ul className="pagination">
-                    <li><a href="tienda.html" aria-label="Página anterior"> << </a></li>
-                    <li><a href="tienda.html" aria-label="Ir a la página 1">1</a></li>
-                    <li><a href="tienda.html" aria-label="Ir a la página 2">2</a></li>
-                    <li><a href="" aria-label="Página actual, página 3" aria-current="true">3</a></li>
-                    <li><a href="" aria-label="Siguiente página" aria-disabled="true"> >> </a></li>
-                </ul> */}
         </div>
     </main>
     </div>

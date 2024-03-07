@@ -2,8 +2,8 @@ import React, { useContext } from 'react'
 import { datosContext } from '../contexts/CarritoContext';
 import Aside from './Aside';
 import '../css/carrito.css'
-export default function Carrito() {
 
+export default function Carrito() {
     
     const [carrito, setCarrito] = useContext(datosContext);
     const cantidad = carrito.reduce((total, valor) => {

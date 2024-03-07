@@ -1,7 +1,8 @@
 import React from 'react'
-import carrito from '../assets/carrito-de-compras.png'
 import ordenador from '../assets/ordenador.png'
 import '../css/main.css'
+import Boton from './Boton.jsx'
+import { Link } from 'react-router-dom'
 
 
 export default function Aside() {
@@ -12,7 +13,9 @@ export default function Aside() {
        <p>Trabajos de impesión personalizados,<br/>
            desde 0.02€ con distintos acabados<br/>
            ¡EMPIEZA YA!</p>
-       <img className="boton" src={carrito} alt="Boton con acceso a la página de impresion"/>
+           <Link to={'/tienda'}>
+           <Boton />
+           </Link>
    </aside>
 
   )

@@ -1,0 +1,16 @@
+/* Botones del aside */
+.boton {
+    height: auto;
+    border-radius: 50%;
+    background: #005478;
+    width: 100px;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;   
+
+}
+
+.boton:hover {
+    background: #76052A;
+    -webkit-transform: scale(.5);
+    transform: scale(.5);
+}
