@@ -32,7 +32,7 @@ function Articulo({id, nombre,descripcion,precio,imagen,categoria}) {
             localStorage.setItem('carrito', JSON.stringify(nuevoCarrito));
             return nuevoCarrito;
           } else {
-            //si no existe en el carrito añadimos
+            //si no existe en el carrito añadimos por primera vez
             const nuevoCarrito = [...actualCarrito, { id, cantidad: 1, precio, nombre, imagen }];
             localStorage.setItem('carrito', JSON.stringify(nuevoCarrito));
             return nuevoCarrito;
@@ -40,7 +40,7 @@ function Articulo({id, nombre,descripcion,precio,imagen,categoria}) {
         });
       };
 
-      const borrarArticulo = (id) => {
+      const borrarCarrito = (id) => {
         setCarrito((actualCarrito) => {
             //buscamos el articulo para saber si esta en el carrito
           const articuloEncontrado = actualCarrito.find((articulo) => articulo.id === id);
@@ -77,7 +77,7 @@ function Articulo({id, nombre,descripcion,precio,imagen,categoria}) {
                <p>{precio}€</p>  
                <a href="#" onClick={()=> addAlCarrito()}>
                 <img className="img-carrito" src={mascarrito} alt="carrito" /></a>
-                <a href="#" onClick={()=> borrarArticulo(id)}>
+                <a href="#" onClick={()=> borrarCarrito(id)}>
                 <img className="img-carrito" src={menoscarrito} alt="borrar" /></a>
            </div>
        </div>

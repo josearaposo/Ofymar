@@ -1,10 +1,12 @@
 import React, { useContext } from 'react'
 import { datosContext } from '../contexts/CarritoContext';
 import Aside from './Aside';
+import Pdf from './Pdf';
+import { PDFDownloadLink } from '@react-pdf/renderer';
 import '../css/carrito.css'
 
 export default function Carrito() {
-    
+
     const [carrito, setCarrito] = useContext(datosContext);
     const cantidad = carrito.reduce((total, valor) => {
         return total + valor.cantidad;
@@ -15,13 +17,14 @@ export default function Carrito() {
     },0);
 
     const hacerCompra = () => {
-    
+
         // Después de realizar la compra, borrar el contenido del localStorage
         localStorage.removeItem('carrito');
     
         // También puedes actualizar el estado del carrito en tu aplicación, si es necesario
         setCarrito([]);
       };
+ 
     
   return (
     <div className="contenedor-principal">
@@ -42,7 +45,14 @@ export default function Carrito() {
         <h1>Carrito:</h1>
         <div>Cantidad: {cantidad}</div>
         <div>Total: {totalCarrito} €</div>
-       <button onClick={hacerCompra}>Comprar</button>
+        <PDFDownloadLink document={<Pdf micompra={carrito} />} fileName='factura.pdf'>
+          {({ blob, url, loading, error }) => (
+            <button onClick={hacerCompra}>
+              {loading ? 'Cargando documento...' : 'Confirmar Compra'}
+            </button>
+          )}
+        </PDFDownloadLink>
+        <button onClick={hacerCompra}>Cancelar</button>
     </main>
 
     </div>
