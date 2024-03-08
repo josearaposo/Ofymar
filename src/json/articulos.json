@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "nombre":"Lapiz KF00123",
+        "descripcion":"Lapiz Steadler punta HB unidad",
+        "precio":0.45,
+        "imagen":"/src/assets/73090g.jpeg",
+        "categoria": "Escritura"
+    },
+    {
+        "id": 2,
+        "nombre":"Boligrafo BIC",
+        "descripcion":"Boligrafo Bic Cristal 1mm Unidad",
+        "precio":0.40,
+        "imagen":"/src/assets/bic.jpeg",
+        "categoria": "Escritura"
+    },
+    {
+        "id": 3,
+        "nombre":"Portaminas Pi",
+        "descripcion":"Prtaminas 0.5mm Pilot con borrador ",
+        "precio":1.50,
+        "imagen":"/src/assets/cajanoris.webp",
+        "categoria": "Escritura"
+    },
+    {
+        "id": 4,
+        "nombre":"Tempera Liquida",
+        "descripcion":"Tempera Liqueda 50ml ",
+        "precio":6.20,
+        "imagen":"/src/assets/07871g.jpg",
+        "categoria": "Escritura"
+    },
+    {
+        "id": 5,
+        "nombre":"Lapiz KF00123",
+        "descripcion":"Lapiz Steadler punta HB unidad",
+        "precio":0.45,
+        "imagen":"/src/assets/cajanoris.webp",
+        "categoria": "Escritura"
+    },
+    {
+        "id": 6,
+        "nombre":"Boligrafo BIC",
+        "descripcion":"Boligrafo Bic Cristal 1mm Unidad",
+        "precio":0.40,
+        "imagen":"/src/assets/24725.webp",
+        "categoria": "Escritura"
+    },
+    {
+        "id": 7,
+        "nombre":"Portaminas Pi",
+        "descripcion":"Prtaminas 0.5mm Pilot con borrador ",
+        "precio":1.50,
+        "imagen":"/src/assets/38053.webp",
+        "categoria": "Escritura"
+    },
+    {
+        "id": 8,
+        "nombre":"Tempera Liquida",
+        "descripcion":"Tempera Liqueda 50ml ",
+        "precio":6.20,
+        "imagen":"/src/assets/00806.jpeg",
+        "categoria": "Escritura"
+    }
+]

@@ -45,7 +45,7 @@ export default function Carrito() {
         <h1>Carrito:</h1>
         <div>Cantidad: {cantidad}</div>
         <div>Total: {totalCarrito} €</div>
-        <PDFDownloadLink document={<Pdf micompra={carrito} />} fileName='factura.pdf'>
+        <PDFDownloadLink document={<Pdf micompra={carrito}/>} fileName='factura.pdf'>
           {({ blob, url, loading, error }) => (
             <button onClick={hacerCompra}>
               {loading ? 'Cargando documento...' : 'Confirmar Compra'}

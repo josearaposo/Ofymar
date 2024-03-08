@@ -11,9 +11,12 @@ import { Link } from 'react-router-dom'
 
 
 export default function Tienda() {
-const URL = "/json/articulos.json";
+    
+const URL = "/src/json/articulos.json";
 const [Datos, setDatos] = useState([]);
+const [datosPorCategoria, setdatosPorCategoria] = useState([]);
 
+const categoria = 'Escritura';
 useEffect(() => {
 
 //Conexion fetch
@@ -23,6 +26,10 @@ useEffect(() => {
             const response = await fetch(URL);
             const Datos = await response.json();
             setDatos(Datos);
+
+            const datosPorCategoria = Datos.filter((articulo) => articulo.categoria === categoria);
+            setdatosPorCategoria(datosPorCategoria);
+
         } catch (error) {
             console.error('Error al obtener los datos:', error);
         }
@@ -59,7 +66,7 @@ useEffect(() => {
         <div className="contenedor">
           <div className="contenedor-articulos">   
             {
-            Datos.map((producto, idx) => {
+            datosPorCategoria.map((producto, idx) => {
             return <Articulo key={producto.id}{...producto} />;
             })}
             
